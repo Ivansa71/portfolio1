@@ -6,7 +6,7 @@ import {Cotainer} from "../../components/Cotainer.tsx";
 import {FlexContainer} from "../../components/FlexContainer.tsx";
 
 
-export const Footerss = () => {
+export const Footer = () => {
     return (
         <StyledFooter>
             <Cotainer>
