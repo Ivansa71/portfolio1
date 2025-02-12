@@ -7,4 +7,5 @@ export const ProgectTitle = styled.h2`
     line-height: 0.92857;
     text-align: center;
     color: #000;
+    margin-top: 10px;
 `

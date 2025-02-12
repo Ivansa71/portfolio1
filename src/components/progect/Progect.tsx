@@ -9,7 +9,7 @@ import {ProgectLinks} from "./ProgectLinks.tsx";
 
 
 type ProgectPropsType = {
-    iiconId: string;
+    iconId: string;
     title: string;
     text: string;
     stack: string;
@@ -20,13 +20,13 @@ type ProgectPropsType = {
 export const Progect = (props: ProgectPropsType) => {
     return (
         <ProgectContainer>
-            <Icon iconId={props.iiconId} width="375" height="260" viewBox="0 0 375 260"/>
+            <Icon iconId={props.iconId} width="375" height="260" viewBox="0 0 375 260"/>
             <ProgectTitle>{props.title}</ProgectTitle>
                 <ProgectText>{props.text}</ProgectText>
                     <ProgectStack>TECH STACK: ${props.stack}</ProgectStack>
                     <ProgectLinks>
-                        <a href= '{props.href}'>Live Preview</a>
-                        <a href= '{props.href}'>View Code</a>
+                        <a href= {props.href}>Live Preview</a>
+                        <a href= {props.href}>View Code</a>
                     </ProgectLinks>
         </ProgectContainer>
 );

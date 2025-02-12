@@ -7,4 +7,5 @@ export const ProgectText = styled.text`
     line-height: 1.44444;
     color: #666;
     margin-left: 20px;
+    margin-top: 15px;
 `

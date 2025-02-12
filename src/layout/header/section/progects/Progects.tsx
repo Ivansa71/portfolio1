@@ -14,12 +14,12 @@ export const Progects = () => {
                 <SectionTitle>Projects</SectionTitle>
                 <SectionText>Things I’ve built so far</SectionText>
                 <FlexContainer wrap = 'wrap' justifyContent='space-evenly' >
-                    <Progect iiconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
-                    <Progect iiconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
-                    <Progect iiconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
-                    <Progect iiconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
-                    <Progect iiconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
-                    <Progect iiconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
+                    <Progect iconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
+                    <Progect iconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
+                    <Progect iconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
+                    <Progect iconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
+                    <Progect iconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
+                    <Progect iconId='progect' title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
                 </FlexContainer>
             </Cotainer>
         </StyleProgects>

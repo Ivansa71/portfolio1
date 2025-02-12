@@ -7,5 +7,6 @@ export const ProgectStack = styled.text `
     line-height: 1.625;
     color: #42446e;
     margin-left: 20px;
+    margin-top: 15px;
 `
 
