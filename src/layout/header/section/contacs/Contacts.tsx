@@ -5,6 +5,8 @@ import {Icon} from "../../../../components/titleImg/Icon.tsx";
 import {SyledTitleImg} from "../../Header.tsx";
 import {Logo} from "../../../../components/logo/Logo.tsx";
 import {Cotainer} from "../../../../components/Cotainer.tsx";
+import {font} from "../../../../styles/Common.ts";
+import {theme} from "../../../../styles/Theme.tsx";
 
 
 
@@ -23,7 +25,7 @@ export const Contacts = () => {
                         <Icon iconId='katSvg' width='37'/>
                     </SyledTitleImg>
                 </ContactDiv>
-                <Icon iconId='line' width="1194" height="2" viewBox="0 0 1194 2"/>
+                <Line/>
             </Cotainer>
         </Contact>
     );
@@ -33,21 +35,14 @@ const Contact = styled.section`
 
 `
 const StyledContact = styled.div`
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #42446e;
+    ${font({family: '"Poppins", sans-serif', weight: 700, Fmax: 20, Fmin: 15, color: '#42446e' })};
     display: flex;
     justify-content: center;
     
 `
 
 const Emeil = styled.h2`
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1.2069;
-    letter-spacing: -0.02em;
+    ${font({family: '"DM Sans", sans-serif', weight: 700, Fmax: 30, Fmin: 20, lineHeight: 1.2069, spacing:-0.02 })};
     text-align: center;
     background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
     background-clip: text;
@@ -56,12 +51,23 @@ const Emeil = styled.h2`
 `
 
 const ContactDiv = styled.div`
- display: flex;
+    display: flex;
     justify-content: space-between;
+    
+    @media ${theme.media.mobile} {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
 `
 
 const Number = styled.span`
     display: flex;
     align-items: center;
     
+`
+
+const Line = styled.div`
+    width: 100%;
+    border-top: 1px solid #5d616a
 `

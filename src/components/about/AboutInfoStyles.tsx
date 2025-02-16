@@ -1,12 +1,8 @@
 import styled from "styled-components";
+import {font} from "../../styles/Common.ts";
 
 export const AboutInfoTitle = styled.h3`
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.4;
-    letter-spacing: 0.05em;
-    color: #666;
+    ${font ({family: '"Poppins", sans-serif', weight: 400, Fmax: 20, Fmin: 15, lineHeight: 1.4, color: '#666', spacing: 0.05})};
 `
 
 export const AboutInfoTimeConteiner = styled.div`
@@ -16,27 +12,13 @@ export const AboutInfoTimeConteiner = styled.div`
     border-radius: 15px;
 `
 export const AboutInfoTime = styled.p`
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 9px;
-    line-height: 2.88889;
+    ${font ({family: '"Poppins", sans-serif', weight: 600, Fmax: 10, Fmin: 8, lineHeight: 2.88889, color: '#018c0f'})};
     text-align: center;
-    color: #018c0f;
 `
 
 export const AboutInfoName = styled.p`
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 2.33333;
-    letter-spacing: 0.08em;
-    color: #a7a7a7;
+    ${font ({family: '"Poppins", sans-serif', weight: 500, Fmax: 15, Fmin: 12, lineHeight: 2.33333, color: '#a7a7a7', spacing: 0.08})};
 `
 export const AboutInfoDate = styled.p`
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 2.33333;
-    letter-spacing: 0.08em;
-    color: #a7a7a7;
+    ${font ({family: '"Poppins", sans-serif', weight: 500, Fmax: 15, Fmin: 12, lineHeight: 2.33333, color: '#a7a7a7', spacing: 0.08})};
 `

@@ -19,6 +19,7 @@ export const Skils = () => {
                     <Icon iconId = 'htmlSvg' height='50' width = '50' viewBox= '0 0 120 120'/>
                     <Icon iconId= 'cssSvg' width="50" height="50" viewBox="0 0 120 119"/>
                     <Icon iconId= 'jsSvg' width="50" height="50" viewBox="0 0 120 120"/>
+                    <Icon iconId= 'reactSvg' width="50" height="50" viewBox="0 0 113 101"/>
                     <Icon iconId= 'vscodeSvg' width="50" height="50" viewBox="0 0 112 112"/>
                     <Icon iconId='katSvg' width="48" height="48" viewBox="0 0 30 30"/>
                 </FlexContainer>

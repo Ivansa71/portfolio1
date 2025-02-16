@@ -1,6 +1,9 @@
 // import React from 'react';
 
 import styled from "styled-components";
+import {theme} from "../../styles/Theme.tsx";
+import {Icon} from "../titleImg/Icon.tsx";
+import {SyledTitleImg} from "../../layout/header/Header.tsx";
 
 export const Menu = () => {
     return (
@@ -22,14 +25,28 @@ export const Menu = () => {
                     <Link href="">Contact</Link>
                 </ListItem>
             </ul>
+
+            <SyledTitleImg>
+                <Icon iconId= 'vkSvg' height='60'/>
+                <Icon iconId= 'telegramSvg'  height='60'/>
+                <Icon iconId = 'katSvg' width='37' />
+            </SyledTitleImg>
         </StyledMenu>
     );
 };
 
-const StyledMenu = styled.nav`
+const StyledMenu = styled.div`
+    display: flex;
+    gap: 20px;
+    align-items: center;
     ul {
         display: flex;
         gap: 30px;
+    }
+
+
+    @media ${theme.media.tablet} {
+        display: none;
     }
 `
 

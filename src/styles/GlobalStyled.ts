@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {theme} from "./Theme.tsx";
 
 export const GlobalStyled = createGlobalStyle`
     *,
@@ -6,6 +7,7 @@ export const GlobalStyled = createGlobalStyle`
     *:after {
         margin: 0;padding: 0;
         box-sizing: border-box;
+        
     }
     body {
         margin: 0;
@@ -14,12 +16,13 @@ export const GlobalStyled = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        
     }
 
-    code {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
-    }
+    //code {
+    //    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    //    monospace;
+    //}
     
     a {
         text-decoration: none;
@@ -35,7 +38,13 @@ export const GlobalStyled = createGlobalStyle`
     }
 
     section {
-        padding: 50px 0;
+        padding: 100px 0;
+
+        @media ${theme.media.mobile} {
+            padding: 70px 0;
+        }
     }
+    
+    
 `
 

@@ -3,14 +3,16 @@
 import styled from "styled-components";
 import {Menu} from "../../components/menu/Menu.tsx";
 import {Cotainer} from "../../components/Cotainer.tsx";
-import {FlexContainer} from "../../components/FlexContainer.tsx";
+import {font} from "../../styles/Common.ts";
+import {theme} from "../../styles/Theme.tsx";
+
 
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <Cotainer>
-                <FlexContainer justifyContent='space-between' alignItems='center' >
+                <FooterContainer >
                     <Menu/>
                     <Slogan>
                         <span>Designed and built by </span>
@@ -18,7 +20,7 @@ export const Footer = () => {
                         <span>with </span>
                         <Cofee>love and coffee</Cofee>
                     </Slogan>
-                </FlexContainer>
+                </FooterContainer>
             </Cotainer>
         </StyledFooter>
     );
@@ -28,13 +30,23 @@ const StyledFooter = styled.footer`
     height: 70px;
 `
 
+const FooterContainer = styled.div`
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    @media ${theme.media.tablet} {
+        justify-content:center;
+    }
+`
+
 const Slogan = styled.div`
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.44444;
+    ${font({family: '"Poppins", sans-serif', weight: 400, Fmax: 10, Fmin: 9, lineHeight: 1.44444, color: '#666'})};
     text-align: center;
-    color: #666;
+    
+    @media ${theme.media.tablet} {
+        font-size: 15px;
+    }
     
 `
 

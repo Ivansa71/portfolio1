@@ -2,10 +2,9 @@
 
 import {Icon} from "../titleImg/Icon.tsx";
 import styled from "styled-components";
-import {ProgectTitle} from "./ProgectTitle.tsx";
-import {ProgectText} from "./ProgectText.tsx";
-import {ProgectStack} from "./ProgectStack.tsx";
-import {ProgectLinks} from "./ProgectLinks.tsx";
+
+import {ProgectLinks, ProgectStack, ProgectText, ProgectTitle} from "./ProgectStyles.tsx";
+
 
 
 type ProgectPropsType = {
@@ -20,10 +19,10 @@ type ProgectPropsType = {
 export const Progect = (props: ProgectPropsType) => {
     return (
         <ProgectContainer>
-            <Icon iconId={props.iconId} width="375" height="260" viewBox="0 0 375 260"/>
+            <Icon iconId={props.iconId} width="330" height="260" viewBox="0 0 375 260"/>
             <ProgectTitle>{props.title}</ProgectTitle>
                 <ProgectText>{props.text}</ProgectText>
-                    <ProgectStack>TECH STACK: ${props.stack}</ProgectStack>
+                    <ProgectStack>TECH STACK: {props.stack}</ProgectStack>
                     <ProgectLinks>
                         <a href= {props.href}>Live Preview</a>
                         <a href= {props.href}>View Code</a>
@@ -34,10 +33,11 @@ export const Progect = (props: ProgectPropsType) => {
 
 const ProgectContainer = styled.div `
     height: 570px;
-    width: 375px;
+    width: 330px;
     box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin-bottom: 20px;
+    margin-right: 8px;
     display: flex;
     flex-direction: column
 `

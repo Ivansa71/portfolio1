@@ -3,6 +3,8 @@
 import styled from "styled-components";
 import {AboutInfo} from "../../../../components/about/AboutInfo.tsx";
 import {Cotainer} from "../../../../components/Cotainer.tsx";
+import {font} from "../../../../styles/Common.ts";
+import {theme} from "../../../../styles/Theme.tsx";
 
 export const About = () => {
     return (
@@ -28,26 +30,21 @@ const AboutStyles = styled.section`
 `
 
 const AboutTitle = styled.h2`
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-top: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.2381;
-    letter-spacing: -0.01em;
-    color: #42446e;
+    ${font ({family: '"Poppins", sans-serif', weight: 700, Fmax: 32, Fmin: 28, lineHeight: 1.2381, color: '#42446e', spacing: -0.01})};
+    
+    @media ${theme.media.mobile} {
+        margin-bottom: 30px;
+    }
 `
 
 const AboutTextConteiner = styled.div`
-    width: 710px;
+    max-width: 710px;
 `
 const AboutText = styled.span`
-    
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.44444;
-    color: #666;
+    width: 100%;
+    ${font ({family: '"Poppins", sans-serif', weight: 400, Fmax: 18, Fmin: 15, lineHeight: 1.44444, color: '#666'})};
 `
 
 
