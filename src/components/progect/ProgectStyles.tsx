@@ -24,5 +24,6 @@ export const ProgectStack = styled.text `
 export const ProgectText = styled.text`
     ${font({family: '"Poppins", sans-serif', weight: 300, Fmax: 18, Fmin: 14, lineHeight: 1.44444, color: '#666' })};
     margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20px;
 `
