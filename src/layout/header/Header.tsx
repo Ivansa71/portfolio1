@@ -25,7 +25,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    height: 59px;
+    height: 70px;
     width: 100%;
     position: fixed;
     top: 0;

@@ -2,11 +2,13 @@
 
 import styled from "styled-components";
 
+
 type FlexContainerPropsType = {
     direction?: string;
     justifyContent?: string;
     alignItems?: string;
     wrap?: string;
+
 }
 
 
@@ -17,6 +19,8 @@ export const FlexContainer = styled.div<FlexContainerPropsType>`
     align-items: ${props => props.alignItems || 'stretch'};
     flex-wrap: ${props => props.wrap || 'nowrap'};
     height: 100%;
+
+
     
 `
 

@@ -4,16 +4,21 @@ import styled, {css} from "styled-components";
 import {SyledTitleImg} from "../Header.tsx";
 import {Icon} from "../../../components/titleImg/Icon.tsx";
 import {theme} from "../../../styles/Theme.tsx";
+import {useState} from "react";
 
 
 
 export const MobileMenu = () => {
+    const [menuIsOpen, setmenuIsOpen] = useState(false)
+    const onBurgerBtnClick = () => {
+        setmenuIsOpen(!menuIsOpen)
+    }
     return (
         <StyledMenu>
-            <BurgerButton isOpen={false}>
+            <BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
             <span></span>
             </BurgerButton>
-            <MobileMenuPopup isOpen={false}>
+            <MobileMenuPopup isOpen={menuIsOpen}>
                 <ul>
                     <ListItem>
                         <Link href="">Home</Link>
@@ -31,18 +36,24 @@ export const MobileMenu = () => {
                         <Link href="">Contact</Link>
                     </ListItem>
                 </ul>
-            <SyledTitleImg>
-                <Icon iconId='vkSvg' height='60'/>
-                <Icon iconId='telegramSvg' height='60'/>
-                <Icon iconId='katSvg' width='37'/>
-            </SyledTitleImg>
+                <SyledTitleImg>
+                    <a href='https://vk.com/id132948390'>
+                        <Icon iconId='vkSvg' height='60'/>
+                    </a>
+                    <a>
+                        <Icon iconId='telegramSvg' height='60'/>
+                    </a>
+                    <a>
+                        <Icon iconId='katSvg' width='37'/>
+                    </a>
+                </SyledTitleImg>
             </MobileMenuPopup>
         </StyledMenu>
     );
 };
 
 const StyledMenu = styled.div`
-   
+
     display: none;
     gap: 20px;
     align-items: center;

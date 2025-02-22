@@ -11,9 +11,7 @@ export const About = () => {
         <AboutStyles>
             <Cotainer>
                 <AboutTitle>About Me</AboutTitle>
-                <AboutTextConteiner>
-                    <AboutText>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</AboutText>
-                </AboutTextConteiner>
+                <AboutText>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</AboutText>
                 <AboutTitle>Work Experience</AboutTitle>
                 <AboutInfo aboutInfoTitle='There is no information yet)'/>
                 <AboutTitle>Education</AboutTitle>
@@ -39,11 +37,8 @@ const AboutTitle = styled.h2`
     }
 `
 
-const AboutTextConteiner = styled.div`
+const AboutText = styled.p`
     max-width: 710px;
-`
-const AboutText = styled.span`
-    width: 100%;
     ${font ({family: '"Poppins", sans-serif', weight: 400, Fmax: 18, Fmin: 15, lineHeight: 1.44444, color: '#666'})};
 `
 

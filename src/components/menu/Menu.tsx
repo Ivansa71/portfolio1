@@ -27,9 +27,15 @@ export const Menu = () => {
             </ul>
 
             <SyledTitleImg>
-                <Icon iconId= 'vkSvg' height='60'/>
-                <Icon iconId= 'telegramSvg'  height='60'/>
-                <Icon iconId = 'katSvg' width='37' />
+                <a href= 'https://vk.com/id132948390'>
+                    <Icon iconId= 'vkSvg' height='60'/>
+                </a>
+                <a href= ''>
+                    <Icon iconId= 'telegramSvg'  height='60'/>
+                </a>
+                <a  href= ''>
+                    <Icon iconId = 'katSvg' width='37' />
+                </a>
             </SyledTitleImg>
         </StyledMenu>
     );

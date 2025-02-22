@@ -1,6 +1,6 @@
 // import React from 'react';
 
-import {Icon} from "../titleImg/Icon.tsx";
+
 import styled from "styled-components";
 
 import {ProgectLinks, ProgectStack, ProgectText, ProgectTitle} from "./ProgectStyles.tsx";
@@ -8,36 +8,46 @@ import {ProgectLinks, ProgectStack, ProgectText, ProgectTitle} from "./ProgectSt
 
 
 type ProgectPropsType = {
-    iconId: string;
     title: string;
     text: string;
     stack: string;
-    href?: string;
-
+    hrefPreviev?: string;
+    hrefCode?: string;
 }
 
 export const Progect = (props: ProgectPropsType) => {
     return (
         <ProgectContainer>
-            <Icon iconId={props.iconId} width="330" height="260" viewBox="0 0 375 260"/>
-            <ProgectTitle>{props.title}</ProgectTitle>
+            <ImgesProject src = '../../../src/assets/imges/Rectangle%204.png' alt= ''/>
+            <ProgectContetnt>
+                <ProgectTitle>{props.title}</ProgectTitle>
                 <ProgectText>{props.text}</ProgectText>
-                    <ProgectStack>TECH STACK: {props.stack}</ProgectStack>
-                    <ProgectLinks>
-                        <a href= {props.href}>Live Preview</a>
-                        <a href= {props.href}>View Code</a>
-                    </ProgectLinks>
+                <ProgectStack>TECH STACK: {props.stack}</ProgectStack>
+                <ProgectLinks>
+                    <a href= {props.hrefPreviev}>Live Preview</a>
+                    <a href= {props.hrefCode}>View Code</a>
+                </ProgectLinks>
+            </ProgectContetnt>
         </ProgectContainer>
 );
 };
 
 const ProgectContainer = styled.div `
-    height: 570px;
     width: 330px;
-    box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin-bottom: 20px;
     margin-right: 8px;
     display: flex;
     flex-direction: column
+`
+
+const ProgectContetnt = styled.div`
+    padding: 20px;
+    display: flex;
+    flex-direction: column
+`
+
+const ImgesProject = styled.img`
+    width: 100%;
 `

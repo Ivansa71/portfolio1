@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 import {FlexContainer} from "../FlexContainer.tsx";
-import {AboutInfoDate, AboutInfoName, AboutInfoTime, AboutInfoTitle, AboutInfoTimeConteiner} from "./AboutInfoStyles.tsx";
+import {AboutInfoDate, AboutInfoName, AboutInfoTime, AboutInfoTitle,} from "./AboutInfoStyles.tsx";
 
 type AboutInfoConteinerPropsType = {
     aboutInfoTitle?: string;
@@ -15,11 +15,11 @@ type AboutInfoConteinerPropsType = {
 export const AboutInfo = (props:AboutInfoConteinerPropsType) => {
     return (
         <AboutInfoConteiner>
-            <FlexContainer justifyContent='space-between'>
+            <FlexContainer justifyContent='space-between' alignItems= 'flex-start' >
                 <AboutInfoTitle>{props.aboutInfoTitle}</AboutInfoTitle>
-                <AboutInfoTimeConteiner>
+
                     <AboutInfoTime>{props.aboutInfoTime}</AboutInfoTime>
-                </AboutInfoTimeConteiner>
+
             </FlexContainer>
             <FlexContainer justifyContent='space-between'>
                 <AboutInfoName>{props.aboutInfoName}</AboutInfoName>

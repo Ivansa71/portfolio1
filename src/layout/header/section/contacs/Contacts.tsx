@@ -15,10 +15,10 @@ export const Contacts = () => {
         <Contact>
             <Cotainer>
                 <StyledContact>For any questions please mail me:</StyledContact>
-                <Emeil>ithuta484@gmail.com</Emeil>
+                <Emeil href= 'mailto: ithuta484@gmail.com'>ithuta484@gmail.com</Emeil>
                 <ContactDiv>
                     <Logo/>
-                    <Number>+7-xxx-xxx-xx-xx</Number>
+                    <Number href= 'tel:+7-920-818-39-29'>+7-xxx-xxx-xx-xx</Number>
                     <SyledTitleImg>
                         <Icon iconId='vkSvg' height='60'/>
                         <Icon iconId='telegramSvg' height='60'/>
@@ -41,13 +41,14 @@ const StyledContact = styled.div`
     
 `
 
-const Emeil = styled.h2`
+const Emeil = styled.a`
     ${font({family: '"DM Sans", sans-serif', weight: 700, Fmax: 30, Fmin: 20, lineHeight: 1.2069, spacing:-0.02 })};
-    text-align: center;
     background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
 `
 
 const ContactDiv = styled.div`
@@ -61,7 +62,7 @@ const ContactDiv = styled.div`
     }
 `
 
-const Number = styled.span`
+const Number = styled.a`
     display: flex;
     align-items: center;
     

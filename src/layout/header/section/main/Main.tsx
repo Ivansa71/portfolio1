@@ -1,7 +1,6 @@
 // import React from 'react';
 import photo from '../../../../assets/imges/GKv-xmawaz4-_1_.webp'
 import styled from "styled-components";
-import {FlexContainer} from "../../../../components/FlexContainer.tsx";
 import {Cotainer} from "../../../../components/Cotainer.tsx";
 import {theme} from "../../../../styles/Theme.tsx";
 import {font} from "../../../../styles/Common.ts";
@@ -10,14 +9,14 @@ export const Main = () => {
     return (
         <StyledMain>
             <Cotainer>
-                <FlexContainer alignItems={"center"} justifyContent={"space-around"} wrap= 'wrap'>
+                <MainContainer>
                     <StyledText>
                         <span>Hi 👋, my name is </span>
                         <Name>Ivan Smirnov</Name>
                         <h1>Frontend developer</h1>
                     </StyledText>
                     <Photo src={photo} alt=''/>
-                </FlexContainer>
+                </MainContainer>
             </Cotainer>
         </StyledMain>
     );
@@ -25,34 +24,46 @@ export const Main = () => {
 
 const StyledMain = styled.div`
     margin-top: 120px;
+    
+   
+    
 `
+const MainContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media ${theme.media.tablet} {
+        display: flex;
+        justify-content: center;
+    }
+`
+
 
 const Photo = styled.img`
     object-fit: cover;
-    width: 185px;
-    height: 185px;
+    width: 377px;
+    height: 377px;
     border-radius: 230px;
     border: double 5px transparent;
     background-image: linear-gradient(#13b0f5, #e70faa), radial-gradient(circle at top left, #13b0f5, #e70faa);
     background-origin: border-box;
     background-clip: content-box, border-box;
     
-    @media ${theme.media.mobile} {
+    @media ${theme.media.tablet} {
         margin-top: 10px;
     }
 
 `
 
 export const StyledText = styled.div`
-    //font-family: "Poppins", sans-serif;
-    //font-weight: 700;
-    //font-size: 20px;
     color: #42446e;
-    ${font({family: '"Poppins", sans-serif', weight: 700, Fmax: 20, Fmin: 15  })};
+    ${font({family: '"Poppins", sans-serif', weight: 700, Fmax: 20, Fmin: 15})};
 
    
    
-    @media ${theme.media.mobile} {
+    @media ${theme.media.tablet} {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,6 +77,6 @@ export const Name = styled.h2`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    ${font({weight: 800})};
+    ${font({weight: 800, Fmax: 30, Fmin: 20})};
 `
 
