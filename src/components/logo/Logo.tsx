@@ -6,7 +6,7 @@ import {animateTopScroll as scroll} from "react-scroll/modules/mixins/animate-sc
 export const Logo = () => {
     return (
         <a onClick={() => {scroll(1,0,'home',0)}}>
-            <ImgStyled src="/public/logo1.svg" alt="logo"/>
+            <ImgStyled src='' alt="logo"/>
         </a>
     );
 };

@@ -5,16 +5,18 @@ export default defineConfig({
     react({
       babel: {
         plugins: ["babel-plugin-styled-components"],
-      },
-    }),
 
+      },
+
+    }),
   ],
+  base: "/portfolio1/",
   resolve: {
     alias: {
       "@": "/src",
     },
   },
-  build: {
-    outDir: "build",
-  },
+  // build: {
+  //   outDir: "build",
+  // },
 });
