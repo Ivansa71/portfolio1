@@ -5,6 +5,7 @@ import {SyledTitleImg} from "../Header.tsx";
 import {Icon} from "../../../components/titleImg/Icon.tsx";
 import {theme} from "../../../styles/Theme.tsx";
 import {useState} from "react";
+import {Link} from "react-scroll";
 
 
 
@@ -21,19 +22,19 @@ export const MobileMenu = () => {
             <MobileMenuPopup isOpen={menuIsOpen}>
                 <ul>
                     <ListItem>
-                        <Link href="">Home</Link>
+                        <NavLink to="home" smooth = {true} offset = {-80}>Home</NavLink>
                     </ListItem>
                     <ListItem>
-                        <Link href="">About</Link>
+                        <NavLink to="about" smooth = {true} >About</NavLink>
                     </ListItem>
                     <ListItem>
-                        <Link href="">Tech Stack</Link>
+                        <NavLink to="skils" smooth = {true}>Tech Stack</NavLink>
                     </ListItem>
                     <ListItem>
-                        <Link href="">Projects</Link>
+                        <NavLink to="Progects" smooth = {true}>Projects</NavLink>
                     </ListItem>
                     <ListItem>
-                        <Link href="">Contact</Link>
+                        <NavLink to="contact" smooth = {true}>Contact</NavLink>
                     </ListItem>
                 </ul>
                 <SyledTitleImg>
@@ -76,7 +77,7 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
     right: 0;
     bottom: 0;
     z-index: 99999;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.66);
     display: none;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
@@ -151,11 +152,11 @@ const ListItem = styled.li`
     font-size: 20px;
     line-height: 1.3;
     text-align: center;
-    color: #666;
+    color: #560959;
     transition: 0.8s;
-   
-    &:hover {
 
+    &:hover {
+        cursor: pointer;
         transform: rotate(360deg);
 
         @media ${theme.media.tablet} {
@@ -166,9 +167,9 @@ const ListItem = styled.li`
     @media ${theme.media.tablet} {
         font-size: 60px;
     }
-    
+
 `
-const Link = styled.a`
+const NavLink = styled(Link)`
     &:hover {
         color: #f706ff;
     }

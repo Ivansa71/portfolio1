@@ -12,7 +12,7 @@ import {theme} from "../../../../styles/Theme.tsx";
 
 export const Contacts = () => {
     return (
-        <Contact>
+        <Contact id = {'contact'}>
             <Cotainer>
                 <StyledContact>For any questions please mail me:</StyledContact>
                 <Emeil href= 'mailto: ithuta484@gmail.com'>ithuta484@gmail.com</Emeil>
@@ -32,6 +32,8 @@ export const Contacts = () => {
 };
 
 const Contact = styled.section`
+    background-color: white;
+    position: relative;
 
 `
 const StyledContact = styled.div`

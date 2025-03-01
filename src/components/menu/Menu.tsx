@@ -4,25 +4,28 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme.tsx";
 import {Icon} from "../titleImg/Icon.tsx";
 import {SyledTitleImg} from "../../layout/header/Header.tsx";
+import {Link} from "react-scroll";
+
+
 
 export const Menu = () => {
     return (
         <StyledMenu>
             <ul>
                 <ListItem>
-                    <Link href="">Home</Link>
+                    <NavLink to="home" smooth = {true} offset = {-80}>Home</NavLink>
                 </ListItem>
                 <ListItem>
-                    <Link href="">About</Link>
+                    <NavLink to="about" smooth = {true} >About</NavLink>
                 </ListItem>
                 <ListItem>
-                    <Link href="">Tech Stack</Link>
+                    <NavLink to="skils" smooth = {true}>Tech Stack</NavLink>
                 </ListItem>
                 <ListItem>
-                    <Link href="">Projects</Link>
+                    <NavLink to="Progects" smooth = {true}>Projects</NavLink>
                 </ListItem>
                 <ListItem>
-                    <Link href="">Contact</Link>
+                    <NavLink to="contact" smooth = {true}>Contact</NavLink>
                 </ListItem>
             </ul>
 
@@ -57,25 +60,29 @@ const StyledMenu = styled.div`
 `
 
 const ListItem = styled.li`
+    padding: 7px;
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.3;
     text-align: center;
-    color: #666;
+    color: #8c108c;
     transition: 0.8s;
+
     &:hover {
-        
+        cursor: pointer;
         transform: rotate(360deg);
-        
-        
+
+
     }
-    
-    
+
+
 `
-const Link = styled.a`
+const NavLink = styled (Link)`
+    padding: 7px;
     &:hover {
         color: #f706ff;
+        
     }
 `
 

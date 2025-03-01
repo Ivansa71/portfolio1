@@ -11,7 +11,7 @@ import {Cotainer} from "../../../../components/Cotainer.tsx";
 
 export const Skils = () => {
     return (
-        <StyledSkils>
+        <StyledSkils id="skils">
             <Cotainer>
                 <SectionTitle>My Tech Stack</SectionTitle>
                 <SectionText> Technologies I’ve been working with recently</SectionText>
@@ -29,7 +29,8 @@ export const Skils = () => {
 };
 
 const StyledSkils = styled.section`
-    
+    //background-color: white;
+    //position: relative;
 `
 
 

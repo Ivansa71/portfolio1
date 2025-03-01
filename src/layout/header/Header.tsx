@@ -10,7 +10,7 @@ import {MobileMenu} from "./mobileMenu/MobileMenu.tsx";
 
 export const Header = () => {
     return (
-        <StyledHeader>
+        <StyledHeader >
             <Cotainer>
                 <FlexContainer justifyContent='space-between' alignItems= 'center' >
                     <Logo/>

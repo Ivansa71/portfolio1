@@ -4,18 +4,29 @@ import styled from "styled-components";
 import {Cotainer} from "../../../../components/Cotainer.tsx";
 import {theme} from "../../../../styles/Theme.tsx";
 import {font} from "../../../../styles/Common.ts";
+import Typewriter from 'typewriter-effect';
+
 
 export const Main = () => {
     return (
-        <StyledMain>
+        <StyledMain id = {'home'}>
             <Cotainer>
                 <MainContainer>
                     <StyledText>
                         <span>Hi 👋, my name is </span>
                         <Name>Ivan Smirnov</Name>
-                        <h1>Frontend developer</h1>
+                        <MainTitle>
+                            <p>Frontend Developer</p>
+                            <Typewriter
+                            options={{
+                                strings: ['Frontend Developer'],
+                                autoStart: true,
+                                loop: true,
+                                delay: 100,
+                            }}
+                        /></MainTitle>
                     </StyledText>
-                    <Photo src={photo} alt=''/>
+                        <Photo src={photo} alt=''/>
                 </MainContainer>
             </Cotainer>
         </StyledMain>
@@ -37,11 +48,20 @@ const MainContainer = styled.div`
     @media ${theme.media.tablet} {
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
+`
+
+const MainTitle = styled.h1`
+ p {
+     display: none;
+ }
 `
 
 
 const Photo = styled.img`
+    background-color: rgb(255, 255, 255);
+    position: relative;
     object-fit: cover;
     width: 377px;
     height: 377px;
@@ -58,6 +78,8 @@ const Photo = styled.img`
 `
 
 export const StyledText = styled.div`
+    background-color: rgb(255, 255, 255);
+    position: relative;
     color: #42446e;
     ${font({family: '"Poppins", sans-serif', weight: 700, Fmax: 20, Fmin: 15})};
 

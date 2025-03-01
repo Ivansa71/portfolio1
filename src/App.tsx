@@ -6,10 +6,12 @@ import {Progects} from "./layout/header/section/progects/Progects.tsx";
 import {Contacts} from "./layout/header/section/contacs/Contacts.tsx";
 import {Footer} from "./layout/footer/Footer.tsx";
 import {About} from "./layout/header/section/about/About.tsx";
+import {ParticalesMain} from "./components/particalesMain/ParticalesMain.tsx";
 
 function App() {
     return (
         <div className="App">
+            <ParticalesMain/>
             <Header/>
             <Main/>
             <About/>

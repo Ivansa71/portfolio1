@@ -27,6 +27,8 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
+    background-color: white;
+    position: relative;
     height: 70px;
 `
 

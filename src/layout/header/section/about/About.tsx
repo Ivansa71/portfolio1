@@ -8,7 +8,7 @@ import {theme} from "../../../../styles/Theme.tsx";
 
 export const About = () => {
     return (
-        <AboutStyles>
+        <AboutStyles id = {'about'}>
             <Cotainer>
                 <AboutTitle>About Me</AboutTitle>
                 <AboutText>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.</AboutText>
@@ -25,6 +25,9 @@ export const About = () => {
 const AboutStyles = styled.section`
     display: flex;
     flex-direction: column;
+    position: relative;
+   
+
 `
 
 const AboutTitle = styled.h2`
@@ -38,6 +41,8 @@ const AboutTitle = styled.h2`
 `
 
 const AboutText = styled.p`
+    background-color: rgb(255, 255, 255);
+    position: relative;
     max-width: 710px;
     ${font ({family: '"Poppins", sans-serif', weight: 400, Fmax: 18, Fmin: 15, lineHeight: 1.44444, color: '#666'})};
 `
