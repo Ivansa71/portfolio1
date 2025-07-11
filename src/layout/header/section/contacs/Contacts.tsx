@@ -14,11 +14,11 @@ export const Contacts = () => {
     return (
         <Contact id = {'contact'}>
             <Cotainer>
-                <StyledContact>For any questions please mail me:</StyledContact>
+                <StyledContact>Моя почта:</StyledContact>
                 <Emeil href= 'mailto: ithuta484@gmail.com'>ithuta484@gmail.com</Emeil>
                 <ContactDiv>
                     <Logo/>
-                    <Number href= 'tel:+7-920-818-39-29'>+7-xxx-xxx-xx-xx</Number>
+                    <Number href= 'tel:+7-920-818-39-29'>+7-920-818-39-29</Number>
                     <SyledTitleImg>
                         <Icon iconId='vkSvg' height='60'/>
                         <Icon iconId='telegramSvg' height='60'/>

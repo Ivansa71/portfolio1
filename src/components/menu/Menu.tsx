@@ -13,19 +13,19 @@ export const Menu = () => {
         <StyledMenu>
             <ul>
                 <ListItem>
-                    <NavLink to="home" smooth = {true} offset = {-80}>Home</NavLink>
+                    <NavLink to="home" smooth = {true} offset = {-80}>Главная</NavLink>
                 </ListItem>
                 <ListItem>
-                    <NavLink to="about" smooth = {true} >About</NavLink>
+                    <NavLink to="about" smooth = {true} >Обо мне</NavLink>
                 </ListItem>
                 <ListItem>
-                    <NavLink to="skils" smooth = {true}>Tech Stack</NavLink>
+                    <NavLink to="skils" smooth = {true}>Мой стек</NavLink>
                 </ListItem>
                 <ListItem>
-                    <NavLink to="Progects" smooth = {true}>Projects</NavLink>
+                    <NavLink to="Progects" smooth = {true}>Проекты</NavLink>
                 </ListItem>
                 <ListItem>
-                    <NavLink to="contact" smooth = {true}>Contact</NavLink>
+                    <NavLink to="contact" smooth = {true}>Контакты</NavLink>
                 </ListItem>
             </ul>
 

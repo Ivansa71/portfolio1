@@ -13,8 +13,8 @@ export const Main = () => {
             <Cotainer>
                 <MainContainer>
                     <StyledText>
-                        <span>Hi 👋, my name is </span>
-                        <Name>Ivan Smirnov</Name>
+                        <span>Привет 👋, меня зовут </span>
+                        <Name>Иван Смирнов</Name>
                         <MainTitle>
                             <p>Frontend Developer</p>
                             <Typewriter

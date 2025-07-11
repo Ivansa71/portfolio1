@@ -2,11 +2,11 @@
 
 import styled from "styled-components";
 import {animateTopScroll as scroll} from "react-scroll/modules/mixins/animate-scroll";
-
+import LogoImg from '../../assets/imges/logo1.svg'
 export const Logo = () => {
     return (
         <a onClick={() => {scroll(1,0,'home',0)}}>
-            <ImgStyled src='' alt="logo"/>
+            <ImgStyled src={LogoImg} alt="log"/>
         </a>
     );
 };

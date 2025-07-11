@@ -12,16 +12,15 @@ export const Progects = () => {
     return (
         <StyleProgects id ='Progects'>
             <Cotainer>
-                <SectionTitle>Projects</SectionTitle>
-                <SectionText>Things I’ve built so far</SectionText>
+                <SectionTitle>Проекты</SectionTitle>
+                <SectionText>Некоторые из моих работ</SectionText>
                 {/*<MenuProject/>*/}
                 <FlexContainer wrap = 'wrap' justifyContent='space-evenly' >
-                    <Progect  title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
-                    <Progect  title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
-                    <Progect  title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
-                    <Progect  title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
-                    <Progect  title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
-                    <Progect  title='Project Tile goes here' text='This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content' stack='HTML , JavaScript, SASS, React'/>
+                    <Progect  title='Портфолио' text='Одностраничный сайт-портфолио с формой для отправки данных и каруселями' stack='HTML , JavaScript, CSS, React'/>
+                    <Progect  title='Авторизация ' text='Форма авторизации для мобильного приложения' stack='React Native'/>
+                    <Progect  title='Тудулист' text='Мобильное приложение тудулист' stack='React Native'/>
+                    <Progect  title='Счетчик' text='Счетчик с использованием ...' stack='HTML , JavaScript, CSS, React'/>
+                    <Progect  title='Заметки' text='Веб приложения для заметок' stack='HTML , JavaScript, CSS'/>
                 </FlexContainer>
             </Cotainer>
         </StyleProgects>

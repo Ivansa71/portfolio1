@@ -13,8 +13,8 @@ export const Skils = () => {
     return (
         <StyledSkils id="skils">
             <Cotainer>
-                <SectionTitle>My Tech Stack</SectionTitle>
-                <SectionText> Technologies I’ve been working with recently</SectionText>
+                <SectionTitle>Мой стек</SectionTitle>
+                <SectionText> Технологии, с которыми я работаю</SectionText>
                 <FlexContainer wrap = 'wrap' justifyContent = 'space-evenly'>
                     <Icon iconId = 'htmlSvg' height='50' width = '50' viewBox= '0 0 120 120'/>
                     <Icon iconId= 'cssSvg' width="50" height="50" viewBox="0 0 120 119"/>
@@ -22,6 +22,7 @@ export const Skils = () => {
                     <Icon iconId= 'reactSvg' width="50" height="50" viewBox="0 0 113 101"/>
                     <Icon iconId= 'vscodeSvg' width="50" height="50" viewBox="0 0 112 112"/>
                     <Icon iconId='katSvg' width="48" height="48" viewBox="0 0 30 30"/>
+                    <Icon iconId='TS' width="50" height="50" viewBox="0 0 420 420"/>
                 </FlexContainer>
             </Cotainer>
         </StyledSkils>
