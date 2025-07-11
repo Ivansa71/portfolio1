@@ -1,5 +1,5 @@
 // import React from 'react';
-import photo from '../../../../assets/imges/GKv-xmawaz4-_1_.webp'
+import photo from '../../../../assets/imges/photo_2025-07-11_15-38-41.jpg'
 import styled from "styled-components";
 import {Cotainer} from "../../../../components/Cotainer.tsx";
 import {theme} from "../../../../styles/Theme.tsx";
